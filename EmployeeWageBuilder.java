@@ -1,4 +1,4 @@
-/*PURPOSE: Refactor to have one EmployeeWageBuilder for multiple companies.Use array to store company objects */
+/*PROGRAM SUMMARY: Refactor to have one EmployeeWageBuilder for multiple companies using INTERFACE approach */
 
 public class EmployeeWageBuilder {
 	
@@ -17,7 +17,7 @@ public class EmployeeWageBuilder {
 		this.maxWorkingDays=maxWorkingDays;
 		this.maxMonthlyHours=maxMonthlyHours;
 	}
-	//sets total wage of company
+	//sets total wage for company
 	public void setTotalWage(int totalEmpWage) {
 		this.totalEmpWage=totalEmpWage;
 	}
