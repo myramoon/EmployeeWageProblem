@@ -1,4 +1,4 @@
-/*PROGRAM SUMMARY: Refactor to have one EmployeeWageBuilder for multiple companies using INTERFACE approach */
+/*PURPOSE:Refactor to have list of multiple companies to manage employee wage */
 
 public class EmployeeWageBuilder {
 	
@@ -17,7 +17,7 @@ public class EmployeeWageBuilder {
 		this.maxWorkingDays=maxWorkingDays;
 		this.maxMonthlyHours=maxMonthlyHours;
 	}
-	//sets total wage for company
+	//sets total wage of company
 	public void setTotalWage(int totalEmpWage) {
 		this.totalEmpWage=totalEmpWage;
 	}
