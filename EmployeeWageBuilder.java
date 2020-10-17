@@ -1,5 +1,5 @@
-/*PURPOSE:Refactor to have list of multiple companies to manage employee wage */
-
+/*PURPOSE:Refactor to have map storing wage */
+	
 public class EmployeeWageBuilder {
 	
 	//INSTANCE VARIABLES

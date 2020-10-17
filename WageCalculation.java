@@ -1,4 +1,4 @@
-/*PURPOSE: Refactor to have list of multiple companies to manage employee wage */
+/*PURPOSE: Refactor to have map storing wage */
 
 import java.util.*;
 
@@ -10,17 +10,20 @@ public class WageCalculation implements ComputeWageInterface {
         
         //ArrayList declaration
         private ArrayList<EmployeeWageBuilder> companyEmpWageList;
+	private Map<String,EmployeeWageBuilder> companyToEmpWageMap;
 
         //DEFAULT CONSTRUCTOR
         public WageCalculation() {
         	companyEmpWageList=new ArrayList<>();
+		companyToEmpWageMap=new HashMap<>();
         }
 
         //INTERFACE IMPLEMENTATION  
         public void addCompanyDetails(String company,int empRatePerHour, int maxWorkingDays, int maxMonthlyHours) {
         	EmployeeWageBuilder companyDetails=new EmployeeWageBuilder(company,empRatePerHour,maxWorkingDays,maxMonthlyHours);
         	companyEmpWageList.add(companyDetails);   					//company details current object added to list
-        }
+       		companyToEmpWageMap.put(company,companyDetails);
+	 }
         
         public void computeEmployeeWage() {  							//for each company object, call method that sets total wage for it.
                 for (int i=0; i<companyEmpWageList.size(); i++) {
