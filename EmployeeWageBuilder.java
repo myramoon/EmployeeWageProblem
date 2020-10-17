@@ -1,4 +1,4 @@
-/*PURPOSE:Refactor to have map storing wage */
+/* PURPOSE:Refactor to get total wage when queried by company */
 	
 public class EmployeeWageBuilder {
 	
